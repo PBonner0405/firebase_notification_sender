@@ -1,0 +1,27 @@
+{
+  "name": "firebase_notification_sender",
+  "version": "1.0.0",
+  "description": "Firebase notification sender server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/topdev10/firebase_notification_sender.git"
+  },
+  "keywords": [
+    "Node",
+    "Firebase"
+  ],
+  "author": "topdev10",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/topdev10/firebase_notification_sender/issues"
+  },
+  "homepage": "https://github.com/topdev10/firebase_notification_sender#readme",
+  "dependencies": {
+    "firebase-admin": "^9.2.0"
+  }
+}
