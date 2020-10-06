@@ -11,7 +11,7 @@ admin.initializeApp({
 async function sendMessage() {
   // Send a message to devices with the registered tokens
   await admin.messaging().sendMulticast({
-    tokens: ['dbLGW4rpg06uvOPI0HPk7g:APA91bHcwVBMHgwoUuZMFNVGlK_Y8DT0Vd5geK7P19lwp96x2hWpGdeAXrrXwKAXxK9Bx_OpJXIuK3UQ1gEjGl5xhQRXoMG9LgIv5-jizTY9PjhHpVXkusewvxmOecLqAI8YlSOccCam'],
+    tokens: ['d_PNVpk2OUMHjTVyKsb8if:APA91bE8PGvOvkisxsFKOnAy_8BGhG-cBCtINf65dRT70X5OSUMLeHMOmkc2yLVHUCgzMDFHEKYG2r5d-dRULgXWUHjDPuXM9mxdnnZDKDD1Fu8PsZOcU6zdbnoc9docxja7cx-XoWH5'],
     data: { hello: 'world!' },
   });
 }
