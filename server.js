@@ -10,10 +10,21 @@ admin.initializeApp({
 
 async function sendMessage() {
   // Send a message to devices with the registered tokens
-  await admin.messaging().sendMulticast({
-    tokens: ['d_PNVpk2OUMHjTVyKsb8if:APA91bE8PGvOvkisxsFKOnAy_8BGhG-cBCtINf65dRT70X5OSUMLeHMOmkc2yLVHUCgzMDFHEKYG2r5d-dRULgXWUHjDPuXM9mxdnnZDKDD1Fu8PsZOcU6zdbnoc9docxja7cx-XoWH5'],
-    data: { hello: 'world!' },
-  });
+  for(let i = 1 ; i < 2 ; i ++) {
+    await admin.messaging().sendMulticast({
+      tokens: ['c0O-CxlXlkLRmkx5UI7E_M:APA91bEhVN4ohs9g-B31mUVjFklCUtDzc7aEN2KtE-0YZ4M9_NVBXnps0HZaTPfFtCOkjU9n7QMYm3P91skVnqN_AuBjboMDRyQP_9_Zx1EflNftonwnbtbmliGfa2tAY77irTKgs8fx'],
+      data: {
+        // 'picUrl': "https://www.thespaghettidetective.com/favicon-32x32.png",
+        // 'picUrl': 'https://www.thespaghettidetective.com/img/webcam.png',
+        'picUrl': "https://www.thespaghettidetective.com/img/gauge.png",
+        'condensedTitle': `condensedTitle-${i}`,
+        'longTitle': `longTitle-${i}`,
+        'longBody': `here is my body-${i}`,
+        'alert': 'true',
+      },
+    });
+    console.log(i);
+  }
 }
 
 // Send messages to our users
